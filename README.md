@@ -4,7 +4,7 @@ Hi! I’m **Adil Ahnaf**. This is my personal website. Here you can find my work
 
 -   Using Technology: These websites build with **HTML5**, **CSS**, and **Bootstrap5**.
 -   File: All PDF files related to this website include in **the file** folder.
--   Image: The **image** folder contains all related images of this website.
+-   Image: The **img** folder contains all related images of this website.
 -   CSS: The **CSS** folder contains all .css files.
 -   JS: The **JS** folder contains all .js files
 
