@@ -1,5 +1,5 @@
 .intro{
-    background-image: url(../img/slider_1.jpg);
+    background-image: url(../img/slider_2.png);
     background-repeat: no-repeat;
     height: 75%;
     width: 100%;
@@ -8,24 +8,23 @@
 
 .itro_details{
     padding-top: 15%;
-    padding-left: 10%;
+    text-align: center;
     color:  #2e4053;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 700;
     max-width: auto;
 }
 
 .intro_pera{
-    padding-left: 10%;
+    text-align: center;
     color:  #2e4053;
     font-size: x-large;
     max-width: auto;
 }
 
 .intro_button{
-    margin-left: 15%;
-    margin-top: 10px;
-    padding: 8px;
+    margin-top: 30px;
+    padding: 10px;
     color:  #2e4053;
     font-size: x-large;
 }
@@ -107,6 +106,7 @@
 .portfolio-container {
     position: relative;
     width: 100%;
+    border: 1px solid rgb(204, 202, 202);
   }
   
 .image {
@@ -144,3 +144,23 @@
     font-size: 16px;
     padding: 16px 32px;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00b1e4;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(87, 89, 207);
+  }

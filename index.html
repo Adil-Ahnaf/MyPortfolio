@@ -6,9 +6,13 @@
     <title>Adil Ahnaf</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/basic_0.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
+    <button class="btn btn-info"  id="myBtn" title="Go top"><i class="fa fa-arrow-up"></i></button>
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark p-3 sticky-top">
         <div class="container">
           <a class="navbar-brand" href="#"><h4>Adil <span style="color: #33CCFF;">Ahnaf</span></h4></a>
@@ -21,16 +25,16 @@
                 <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Me</a>
+                <a class="nav-link active" href="#about">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
+                <a class="nav-link active" href="#portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#publication">Publication</a>
+                <a class="nav-link active" href="#publication">Publication</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link active" href="#contact">Contact</a>
               </li>    
             </ul>
           </div>
@@ -42,7 +46,8 @@
       <div class="intro"">
         <h1 class="itro_details">Hi! I'm Adil Ahnaf</h1>
         <p class="intro_pera">Web Designer | Web Developer</p>
-        <a class="intro_button btn btn-outline-primary" href="file/CV of Adil Ahnaf.pdf" download="">My Resume</a>
+        <center><a class="intro_button btn btn-outline-info" href="file/CV of Adil Ahnaf.pdf" download="">Download CV</a></center>
+        
       </div>
     </section>
 
@@ -59,11 +64,11 @@
           </div> 
           <div class="col-lg-6">
             <h3>Hi! I am Adil Ahnaf</h3>
-            <p class="mt-1">I have done B.Sc. in Computer Science & Engineering. I have an extraordinary command in web design, web development, web scraping, and data mining, etc. 
+            <p class="mt-3">I have done B.Sc. in Computer Science & Engineering. I have an extraordinary command in web design, web development, web scraping, and data mining, etc. 
               Programming and Web Development have enabled me to develop a good knowledge of this field. I aim to provide top-notch and accurate work along with great quality. 
               I am very hard working and always deliver work on time at an affordable price.
-            </p>
-            <h3 class="mt-5">Technical Skills</h3>
+            </p><hr>
+            <h3 class="mt-3">Technical Skills</h3>
   
             <div class="mt-3">
               <h6>Web Design</h6>
@@ -206,9 +211,37 @@
         </div>
       </div>
     </section>
-     
+
 </body>
 
 <script src="js/bootstrap.js"></script>
 
+<script>
+  $(document).ready(function(){
+    
+    $(window).scroll(function (event) {
+      var scroll = $(window).scrollTop();
+
+      if (scroll > 20) {
+        $("#myBtn").css("display", "block");
+        
+      } else {
+        $("#myBtn").css("display", "none");
+      }
+    });
+
+    $(document).on("click", "#myBtn", function(){
+      $(window).scrollTop(0);
+    });
+
+    $(document).on("mouseover", "a.nav-link", function(){
+      $(this).css("color", "#00b1e4");
+    });
+
+    $(document).on("mouseleave", "a.nav-link", function(){
+      $(this).css("color", "white");
+    });
+    
+  });
+</script>
 </html>
